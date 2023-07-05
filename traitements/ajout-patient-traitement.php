@@ -1,4 +1,4 @@
-<?php require_once('connexion.php');
+<?php require_once('./connexion.php');
 
 if (
     isset($_POST['lastname']) && !empty($_POST['lastname'])
@@ -18,8 +18,8 @@ if (
         'mail' => $_POST['mail'],
     ]);
 
-    header("Location: liste-patients.php");
+    header("Location: ../liste-patients.php");
 
 } else {
-    header("Location: ajout-patient.php");
+    header("Location: ../ajout-patient.php");
 }

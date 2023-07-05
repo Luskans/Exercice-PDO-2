@@ -1,4 +1,4 @@
-<?php require_once('connexion.php');
+<?php require_once('./traitements/connexion.php');
 
 if (isset($_GET['id']) && !empty($_GET['id'])) {
     $id = $_GET['id'];
@@ -23,14 +23,10 @@ $appointment = $tempAppointment[0];
 
     <h2>Détail du rendez-vous</h2>
 
-    <form action="./update-appointment-traitement.php" method="post">
+    <form action="./traitements/update-appointment-traitement.php" method="post">
         <label for="dateHour">Date du rendez-vous :</label>
         <input type="text" name="dateHour" value="<?php echo $appointment['dateHour']?>">
         <br>
-
-        <!-- <label for="idPatients">Patient id :</label>
-        <input type="text" name="idPatients" value="<?php// echo $appointment['idPatients']?>">
-        <br> -->
 
         <input type="hidden" name="id" value="<?php echo $appointment['id']?>">
 

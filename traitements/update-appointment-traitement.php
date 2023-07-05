@@ -15,4 +15,4 @@ if (
         'id' => $_POST['id']
     ]);
 }
-header("Location: liste-rendezvous.php");
+header("Location: ../liste-rendezvous.php");

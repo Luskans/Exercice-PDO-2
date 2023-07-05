@@ -1,4 +1,6 @@
-<?php require_once('connexion.php'); ?>
+<?php require_once('./traitements/connexion.php'); ?>
+
+<a href="index.php">Accueil</a>
 
 <h2>Liste des rendez-vous</h2>
 
@@ -18,7 +20,7 @@ foreach($appointments as $appointment) {
     echo 'Nom: '.htmlspecialchars($patient['lastname']).'<br>';
     echo 'Prénom: '.htmlspecialchars($patient['firstname']).'<br>';
     echo '<a href="rendez-vous.php?id='.$appointment['id'].'">Consultez ce rendez-vous</a><br>';
-    echo '<a href="delete-rendezvous-traitement.php?id='.$appointment['id'].'">Supprimer ce rendez-vous</a><br><br><br>';
+    echo '<a href="./traitements/delete-rendezvous-traitement.php?id='.$appointment['id'].'">Supprimer ce rendez-vous</a><br><br><br>';
 }
 ?>
 

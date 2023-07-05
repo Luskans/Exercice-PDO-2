@@ -37,8 +37,8 @@ if (
         'idPatients' => $patient,
     ]);
 
-    header("Location: liste-patients.php");
+    header("Location: ../liste-patients.php");
 
 } else {
-    header("Location: ajout-patient-rendezvous.php");
+    header("Location: ../ajout-patient-rendezvous.php");
 }

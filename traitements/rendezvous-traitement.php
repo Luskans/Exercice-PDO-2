@@ -13,7 +13,8 @@ if (
         'firstname' => $_POST['firstname'],
         'birthdate' => $_POST['birthdate']
     ]);
-    $tempPatientId = $request->fetchAll();
+    $tempPatientId = $request->fetch();
+    var_dump($tempPatientId);
     $patientId = $tempPatientId[0]['id'];
     echo $patientId;
 
@@ -24,10 +25,10 @@ if (
         'idPatients' => $patientId
     ]);
 
-    header("Location: liste-rendezvous.php");
+    // header("Location: ../liste-rendezvous.php");
 
 } else {
-    header("Location: ajout-rendezvous.php");
+    // header("Location: ../ajout-rendezvous.php");
 }
 
 ?>

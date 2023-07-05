@@ -1,4 +1,4 @@
-<?php require_once('connexion.php');
+<?php require_once('./traitements/connexion.php');
 
 if (isset($_GET['id']) && !empty($_GET['id'])) {
     $id = $_GET['id'];
@@ -22,7 +22,7 @@ $patient = $tempPatient[0];
 
     <h2>Profil du patient</h2>
 
-    <form action="./update-patient-traitement.php" method="post">
+    <form action="./traitements/update-patient-traitement.php" method="post">
         <label for="lastname">Nom :</label>
         <input type="text" name="lastname" value="<?php echo $patient['lastname']?>">
         <br>

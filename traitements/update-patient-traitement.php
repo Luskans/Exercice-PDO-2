@@ -19,4 +19,4 @@ if (
         'id' => $_POST['id']
     ]);
 }
-header("Location: liste-patients.php");
+header("Location: ../liste-patients.php");

@@ -1,4 +1,4 @@
-<?php require_once('connexion.php'); ?>
+<?php require_once('./traitements/connexion.php'); ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -10,10 +10,11 @@
 </head>
 
 <body>
+    <a href="index.php">Accueil</a>
 
     <h2>Ajouter un patient et prendre son rendez-vous</h2>
 
-    <form action="./ajout-patient-rendezvous-traitement.php" method="post">
+    <form action="./traitements/ajout-patient-rendezvous-traitement.php" method="post">
 
         <label for="lastname">Nom :</label>
         <input type="text" name="lastname">
